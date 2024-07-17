@@ -1,0 +1,17 @@
+.main-sec
+{
+    @media (max-width:640px) {
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+    }
+}
+.upper-main-sec
+{
+    @media (max-width:640px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+    }
+}

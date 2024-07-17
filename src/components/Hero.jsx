@@ -1,17 +1,18 @@
 import React from "react";
 import CardsData from "./CardsData";
+import './style.css'
 
 const Hero = () => {
   return (
     <div className="w-full min-h-dvh bg-gradient-to-b from-gray-800 via-indigo-400 to bg-cyan-200">
-      <h1 className="flex justify-center pt-2 font-bold text-xl text-white">
+      <h1 className="lg:flex lg:justify-center lg:pt-2 lg:font-bold lg:text-xl lg:text-white upper-main-sec ">
         This is a cart Functionality app made in react
       </h1>
       {/* card */}
 
-      <div className="grid grid-cols-3 gap-2 " style={{margin:'20px 50px 0px 50px '}}>
+      <div className="lg:grid lg:grid-cols-3 lg:gap-2 main-sec" style={{margin:'20px 50px 0px 50px '}}>
         {CardsData.map((card,index )=>
-        <div className="bg-white m-3 "  key={index}>
+        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3 "  key={index}>
         <a href="#" >
           <img
             className=" h-80 w-full"
