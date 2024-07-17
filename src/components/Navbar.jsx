@@ -1,7 +1,7 @@
 import React from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon, ShoppingCartIcon} from '@heroicons/react/24/outline'
-
+import Cart from './Cart';
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Products', href: '#', current: false },
@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <>
 
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-800 sticky top-0">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -65,15 +65,15 @@ const Navbar = () => {
 
 
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <button
+          {/* <button
               type="button"
               className="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 mx-4"
              >
               <span className="absolute -inset-1.5" />
-              <span className="sr-only">View Cart</span>
-            
-          <ShoppingCartIcon className="h-6 w-6" />
-          </button>
+              <span className="sr-only">View Cart</span> */}
+              <Cart/>
+             
+          {/* </button> */}
             <button
               type="button"
               className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
